@@ -1,0 +1,6 @@
+<p>{{qcm.question}}</p>
+<p *ngIf="!currentQuestion"></p><button mat-raised-button color="primary">Nouvelle partie</button></p>
+<p *ngIf="found">Bien joué !</p>
+<p *ngIf="!found">Dommage, la réponse était : {{qcm.answer}}</p>
+<p *ngIf="hasNext">Prochaine question</p>
+<p *ngIf="!hasNext">Voir mon score</p>
